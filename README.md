@@ -1,2 +1,3 @@
-# PRODIGY_WD_05
-A weather app using HTML, CSS and JavaScript
+# Weather-App
+A weather app made using HTML, CSS, JavaScript and open-source API from [OpenWeather](https://openweathermap.org/)
+
