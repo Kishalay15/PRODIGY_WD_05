@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(17, 2, 67);
+}
+
+.container {
+  background-color: rgb(208, 206, 206);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: min-content;
+  border-radius: 10px;
+}
+
+.search-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding: 15px;
+}
+
+input.no-submit {
+  border: 1px solid white;
+  width: 100%;
+  padding: 9px 4px 9px 4px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/55/Magnifying_glass_icon.svg");
+  background-size: 13px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+
+input[type="search"] {
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 7px 8px 7px 30px;
+  font-size: 16px;
+  color: inherit;
+  border: 1px solid black;
+  border-radius: inherit;
+}
+
+input[type="search"]::placeholder {
+  color: rgb(74, 72, 72);
+}
+
+input[type="search"]:focus {
+  box-shadow: 0 0 3px 0 #3f69a8;
+  border-color: #3f69a8;
+  outline: none;
+}
+
+.search-btn {
+  padding: 2px 5px 2px 5px;
+  border-radius: 5px;
+}
+
+.search-btn:hover {
+  color: grey;
+  background-color: black;
+}
+
+.city-info {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.city-info h2 {
+  font-size: 27px;
+  color: rgb(17, 2, 67);
+}
+
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.temperature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  padding: 0;
+}
+
+.temperature h2 {
+  font-size: 65px;
+  font-weight: 600;
+}
+
+.temperature p {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.description {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.description span {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.other-info {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  padding: 15px;
+  margin: 10px;
+}
+
+.humidity,
+.wind-speed,
+.visibility {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.other-info-values {
+  font-size: 16.5px;
+  font-weight: 700;
+}
